@@ -8,9 +8,14 @@ import java.util.regex.Pattern;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-
 class DemoApplicationTests {
 
+	/**
+	 * We will use the following test method `setUp()` that accepts two inputs, i.e. the regex pattern and the string
+	 * to be searched in the given pattern.
+	 * @param inputRegex
+	 * @param searchString
+	 */
 	boolean setUp(String inputRegex, String searchString) {
 		Pattern p = Pattern.compile(inputRegex, Pattern.CASE_INSENSITIVE);
 		Matcher m = p.matcher(searchString);
