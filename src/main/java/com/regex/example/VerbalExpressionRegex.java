@@ -1,4 +1,5 @@
 package com.regex.example;
+
 import ru.lanwen.verbalregex.VerbalExpression;
 
 public class VerbalExpressionRegex {
